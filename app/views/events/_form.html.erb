@@ -11,28 +11,28 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :name %>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :description %>
-    <%= form.text_area :description %>
+    <%= form.text_area :description, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :venue %>
-    <%= form.text_field :venue %>
+    <%= form.text_field :venue, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :eventdate %>
-    <%= form.date_select :eventdate %>
+    <%= form.date_select :eventdate, class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= form.label :duration %>
-    <%= form.number_field :duration %>
+    <%= form.number_field :duration, class: "form-control" %>
   </div>
 
   <div class="actions">

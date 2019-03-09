@@ -1,9 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Welcome Event Managaer</h1>
+<h1 class="display-1">Welcome Event Manager</h1>
 <h4>The list of events are:</h4>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Name</th>
@@ -23,7 +23,7 @@
         <td><%= event.eventdate %></td>
         <td><%= link_to 'Edit', edit_event_path(event) %></td>
         <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <td><%= link_to 'Details', details_path(event) %>
+        
       </tr>
     <% end %>
   </tbody>
@@ -31,4 +31,4 @@
 
 <br>
 
-<%= link_to 'New Event', new_event_path %>
+<button type="button" class="btn btn-light"><%= link_to 'New Event', new_event_path %></button>
