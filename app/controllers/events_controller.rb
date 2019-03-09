@@ -24,6 +24,7 @@ class EventsController < ApplicationController
   def details
     event_id=params[:id]
     @event=Event.find(event_id)
+    @participants=@event.participants
 
   end
 

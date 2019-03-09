@@ -4,4 +4,10 @@
 # Examples:
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+
 #   Character.create(name: 'Luke', movie: movies.first)
+e=Event.create!({name: 'railsgirls', description:'workshop', venue: 'simpl', eventdate: Date.today, duration: 3 })
+Participant.create!([{name: 'abc', age: 30, gender: 'male', email: 'xmail@gmail.com', event_id: e.id}, 
+{name: 'abc', age: 30, gender: 'male', email: 'xmail@gmail.com', event_id: e.id}, 
+{name: 'abc', age: 30, gender: 'male', email: 'zmail@gmail.com', event_id: e.id}, 
+{name: 'xyz', age: 20, gender: 'female', email: 'ymail@gmail.com', event_id: e.id}])

@@ -3,4 +3,18 @@
 <li>NAME:<%= @event.name %></li>
 <li>DESCRIPTION:<%= @event.description %></li>
 <li>DURATION:<%= @event.duration %></li>
+<% if !@participants.empty? %>
+<h3> Participants:</h3>
+<% end %>
+
+<table>
+<% @participants.each do |participant| %>
+    <tr>
+    <td>Name: <%= participant.name %></td>
+    <td>Age: <%= participant.age %></td>
+    <td>Gender: <%= participant.gender %></td>
+    <td>Email_ID: <%= participant.email %></td></tr>
+
+<% end %>
+</table>
 </ul>
